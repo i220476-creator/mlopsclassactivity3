@@ -1,0 +1,11 @@
+1. **CI/CD and Collaboration:**
+   CI/CD automates model testing, validation, and deployment, ensuring all team members work on consistent code and models. It reduces manual errors, improves transparency, and enables faster integration of changes.
+
+2. **Low Evaluation Score:**
+   If the model’s score is below the threshold, the pipeline halts deployment and triggers alerts or retraining steps to improve model performance before promotion to production.
+
+3. **Retraining/Drift Detection Integration:**
+   The workflow can include periodic data drift monitoring and automatic retraining triggers when performance drops or data distribution changes, keeping the model up to date.
+
+4. **Deployment Steps:**
+   Containerize the workflow (e.g., with Docker), define CI/CD pipelines (e.g., GitHub Actions, Jenkins), configure infrastructure (e.g., AWS SageMaker or Kubernetes), and set up monitoring and scaling for production reliability.
